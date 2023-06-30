@@ -34,7 +34,7 @@ const Form = ({
         className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
       >
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-700">
+          <span className="font-satoshi font-semibold text-base text-gray-700 dark:text-gray-300">
             Your AI Prompt
           </span>
           <textarea
@@ -46,15 +46,16 @@ const Form = ({
           />
         </label>
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-700">
-            Tag{" "}
+          <span className="font-satoshi font-semibold text-base text-gray-700 dark:text-gray-300">
+            Select Tags{" "}
           </span>
           <Select
             isMulti // to allow selecting multiple tags
             options={tagOptions} // available tags
             value={selectedTags} // currently selected tags
+            className="form_input react-select-container"
+            classNamePrefix="react-select"
             onChange={handleTagChange}
-            className="form_input"
           />
         </label>
         <div className="flex-end mx-3 mb-5 gap-4">

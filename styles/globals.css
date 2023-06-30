@@ -65,6 +65,10 @@
   opacity: 0.15;
 }
 
+.react-select-container .react-select__control {
+  /* background-color: red; */
+}
+
 @media screen and (max-width: 640px) {
   .main {
     padding: 0;
@@ -136,16 +140,24 @@
 
 /* Form Component */
 .form_textarea {
-  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0 dark:text-gray-200;
 }
 
 .form_input {
-  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0 dark:text-gray-500;
+}
+
+.react-select {
+  @apply bg-red-600;
+}
+
+.react-select__control {
+  @apply bg-red-600;
 }
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide dark:text-white;
 }
 
 .dropdown {

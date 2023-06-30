@@ -31,9 +31,9 @@ const Nav = () => {
           alt="logo"
           width={30}
           height={30}
-          className="object-contain"
+          className="object-contain bg-red-500;"
         />
-        <p className="logo_text">Promptopia</p>
+        <p className="logo_text"> AI SHARE</p>
       </Link>
 
       {/* Desktop Navigation */}
