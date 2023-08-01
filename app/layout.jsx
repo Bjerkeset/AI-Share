@@ -3,14 +3,10 @@
 import "@styles/globals.css";
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
-import { ThemeProvider } from "next-themes";
+import {ThemeProvider} from "next-themes";
+import {metadata} from "./metadata";
 
-export const metadata = {
-  title: "Promptopia",
-  description: "Discover and Share AI Prompts",
-};
-
-const Rootlayout = ({ children }) => {
+const Rootlayout = ({children}) => {
   return (
     <html lang="en" className="dark">
       <body>
@@ -20,7 +16,7 @@ const Rootlayout = ({ children }) => {
               <div className="gradient" />
             </div>
             <main className="app">
-              <Nav />
+              {/* <Nav /> */}
               {children}
             </main>
           </ThemeProvider>

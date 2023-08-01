@@ -1,8 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import Profile from "@components/profile";
+import {useState, useEffect} from "react";
+import {useSession} from "next-auth/react";
+import {useRouter} from "next/navigation";
+import Profile from "@components/Profile";
 
 import React from "react";
 
@@ -15,7 +15,7 @@ import React from "react";
 
 const MyProfile = () => {
   // Using the 'useSession' hook from 'next-auth/react' to access the current user session.
-  const { data: session } = useSession();
+  const {data: session} = useSession();
 
   // Initializing 'posts' state to an empty array and 'setPosts' function to update it using the useState hook from React.
   const [posts, setPosts] = useState([]);
